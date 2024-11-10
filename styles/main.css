@@ -396,8 +396,11 @@ font-weight: 500;
     text-decoration: underline;
     font-size: .8rem;
     color: rgb(72, 72, 72);
+    cursor: pointer;
 }
 .ir2{
     font-size: .8rem;
     color: rgb(72, 72, 72);
+    cursor: pointer;
+
 }
