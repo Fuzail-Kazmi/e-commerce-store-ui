@@ -8,6 +8,103 @@
     <title>Product Page</title>
 </head>
 <body>
+    <header>
+        <nav class="nav flex item-center space-around">
+            <div class="nav-left flex item-center">
+                <div class="nav-logo">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="" width="100"></a>
+                </div>
+                <div>
+                    <ul class="ulist flex">
+                        <a href="#category-section">
+                            <li>Categories</li>
+                        </a>
+                        <a href="/">
+                            <li>Deals</li>
+                        </a>
+                        <a href="/">
+                            <li>What's New</li>
+                        </a>
+                        <a href="/">
+                            <li>Delivery</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right flex item-center">
+                <div class="search flex">
+                    <input class="search-bar" type="text" placeholder="Search Product">
+                    <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                </div>
+                <div class="user-sec flex">
+                    <div class="user-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <a href="../pages/user/profile.html" class="user"><div>Account</div></a>
+                </div>
+                <div class="cart-sec flex item-center">
+                    <div class="cart-icon ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    </div>
+                    <a href="../pages/cart.html" class="cart"><div>Cart</div></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <div class="pg-product">
+        <main class="product-detail">
+            <section class="pg-section left">
+                <div class="product-media__wrapper">
+                    <div class="product-media__carousel">
+                        <img src="../assets/product-img.jpg" alt="" width="600">
+                    </div>
+                </div>
+            </section>
+            <section class="pg-section right">
+                <div class="product-about">
+                    <div class="font-lg semibold">Sneakers</div>
+                    <div class="font-sm product-dis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ullam officia error
+                        exercitationem
+                        facilis, eligendi nobis. Odio culpa ratione autem.</div>
+                    <div class="rating"><img src="../assets/rating_img.png" alt="" width="80"><span>(671)</span></div>
+                    <div class="product-price">$49.99 <span class="font-sl text-line gray padding-inline">$85.00</span></div>
+                </div>
+                <hr>
+                <div class="quantity-sec">
+                    <div class="quantity-left">
+                        <div class="max-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg></div>
+                        <div class="counter">1</div>
+                        <div class="min-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><path d="M5 12h14"/></svg></div>
+                    </div>
+                    <div class="quantity-right">Quantity</div>
+                </div>
+                <div class="product-pg__buttons">
+                    <button class="btn">Add to cart</button>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="product-pg__info">
+                    <div class="info-box">
+                        <div class="product-info__left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div>
+                        <div class="product-info__right">
+                            <div class="info-right">Free Delivery</div>
+                            <div class="info-right ir1">Enter your Postal code for Delivery Availability</div>
+                        </div>
+                    </div>
+                    <hr class="infoline">
+                    <div class="info-box">
+                        <div class="product-info__left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-2"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg></div>
+                        <div class="product-info__right">
+                            <div class="info-right">Return Delivery</div>
+                            <div class="info-right ir2">Free 30days Delivery Returns.<span class="underline">Details</span></div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </section>
+        </main>
+    </div>
     
+
 </body>
 </html>

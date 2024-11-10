@@ -52,3 +52,6 @@
 .padding-inline{
     padding-inline-start: 5px;
 }
+.underline{
+    text-decoration: underline;
+}
