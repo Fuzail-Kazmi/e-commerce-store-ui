@@ -1,0 +1,54 @@
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.content-center{
+    justify-content: center;
+}
+.pointer {
+    cursor: pointer;
+}
+.font-es{
+    font-size: .7rem;
+}
+.font-sm {
+    font-size: .8rem;
+}
+
+.font-sl {
+    font-size: .9rem;
+}
+
+.font-md {
+    font-size: 1rem;
+}
+
+.font-lg {
+    font-size: 1.5rem;
+}
+.font-lite{
+    font-weight: 400;
+}
+.semibold {
+    font-weight: 600;
+}
+.text-line{
+    text-decoration: line-through;
+}
+.gray{
+    color: gray;
+}
+.padding-inline{
+    padding-inline-start: 5px;
+}

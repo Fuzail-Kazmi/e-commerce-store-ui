@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input,
+textarea {
+    outline: transparent;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.25rem;
+}
+
+img,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+svg {
+    color: var(--color-dark-grey);
+}
+
+body {
+    color: var(--text-color-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Header */
+.nav {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.nav-left {
+    gap: 10px;
+    padding-inline: 10px;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.ulist {
+    gap: 50px;
+    list-style: none;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.ulist a {
+    padding-inline: 10px;
+}
+
+.ulist a:hover {
+    color: #151515c0;
+}
+
+.nav-right {
+    gap: 10px;
+    padding-inline: 5px;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.search {
+    background-color: rgba(230, 230, 230, 0.818);
+    align-items: center;
+    border-radius: 1.2rem;
+    padding: 5px 15px 5px 5px;
+    cursor: pointer;
+
+}
+
+.search-bar {
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px 210px 5px 20px;
+    font-size: .9rem;
+    color: #000;
+}
+
+.search-icon {
+    width: 17px;
+    color: gray;
+}
+
+.user-sec {
+    gap: 5px;
+    align-items: end;
+    color: #141414;
+}
+
+.user-icon {
+    width: 22px;
+}
+
+.user {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.cart-sec {
+    gap: 5px;
+    align-items: end;
+    color: #141414;
+}
+
+.cart-icon {
+    width: 22px;
+}
+
+.cart {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+/* carousel-sec */
+hr{
+    border-top: 2px;
+    border: none solid  gray;
+}
+main {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.carousel img {
+    display: flex;
+    justify-content: center;
+}
+
+.category-sec {
+    margin-top: 50px;
+}
+
+.popular-category {
+    color: #141414ea;
+    font-size: 1.5rem;
+    margin-block: 10px;
+    font-weight: 600;
+}
+
+.category-gapbox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.category-card{
+    border-radius: .3rem;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+.category-card:hover{
+    transform: scale(1.01) 
+}
+.category-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline: 5px;
+    font-size: .9rem;
+}
+.category-about div:nth-child(1){
+    font-weight: 600;
+}
+.products{
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.product-heading{
+    color: #141414ea;
+    font-size: 1.5rem;
+    margin-block: 10px;
+    font-weight: 600;
+}
+.product-box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: .3rem;
+    padding: 10px;
+    /* box-shadow: rgba(215, 219, 222, 0.2) 0px 8px 24px; */
+    box-shadow: 0 0 4px #c6c6ca;
+    cursor: pointer;
+    gap: 10px;
+    padding: 10px;
+    border-radius: .5rem;
+}
+.product-img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 10px;
+}
+.product-img img{
+    width: 150px;
+    margin: auto;
+}
+.product-card-discription{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 10px;
+}
