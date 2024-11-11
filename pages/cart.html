@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../styles/utils.css">
     <title>Cart Section</title>
 </head>
+
 <body>
     <header>
         <nav class="nav flex item-center space-around">
@@ -34,27 +36,510 @@
             <div class="nav-right flex item-center">
                 <div class="search flex">
                     <input class="search-bar" type="text" placeholder="Search Product">
-                    <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                    <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg></div>
                 </div>
                 <div class="user-sec flex">
                     <a href="../pages/user/profile.html">
                         <div class="user-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
                         </div>
                     </a>
-                    <a href="../pages/user/profile.html" class="user"><div>Account</div></a>
+                    <a href="../pages/user/profile.html" class="user">
+                        <div>Account</div>
+                    </a>
                 </div>
                 <div class="cart-sec flex item-center">
                     <a href="../pages/cart.html" class="cart-icon">
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shopping-cart">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                            </svg>
                         </div>
                     </a>
-                    <a href="../pages/cart.html" class="cart"><div>Cart</div></a>
+                    <a href="../pages/cart.html" class="cart">
+                        <div>Cart</div>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
-    
+    <div class="pg-cart">
+        <main class="product-detail">
+            <section class="pg-section cart-left">
+                <div class="product-mediawrapper">
+                    <div class="item-selector flex space-around">
+                        <div class="item-select flex item-center">
+                            <input type="checkbox" class="checkbox">
+                            <label for="select-all">SELECT ALL (7 ITEMS(S))</label>
+                        </div>
+                        <div class="item-delete flex item-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trash-2">
+                                <path d="M3 6h18" />
+                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                <line x1="10" x2="10" y1="11" y2="17" />
+                                <line x1="14" x2="14" y1="11" y2="17" />
+                            </svg>
+                            <div class="delete-heading">DELETE</div>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="list-head">
+                            <div class="store-list">
+                                <input type="checkbox">
+                                <label for="store-name" class="store-name"><span class="store-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store">
+                                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                            <path d="M2 7h20" />
+                                            <path
+                                                d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                        </svg></span><span class="font-sl">Store Name</span></label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart-item-card flex">
+                            <div class="cart-item-box cart-box-left flex">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                                <div class="cart-item-img">
+                                    <img src="../assets/product-img1.jpg" alt="" width="90px">
+                                </div>
+                                <div class="cart-item-discription">
+                                    <div class="cart-item-name">NIKE Men's Shoes</div>
+                                    <div class="cart-item-about">Ethylene-vinyl acetate (EVA)</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-box cart-box-right flex">
+                                <div class="cart-box-price">
+                                    <div class="">$49.99</div>
+                                    <div class="text-line">$85.00</div>
+                                    <div class="price-box-icons flex">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash-2">
+                                                <path d="M3 6h18" />
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                                <line x1="10" x2="10" y1="11" y2="17" />
+                                                <line x1="14" x2="14" y1="11" y2="17" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-quantity-box">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                    <div class="counter font-md">1</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="list-head">
+                            <div class="store-list">
+                                <input type="checkbox">
+                                <label for="store-name" class="store-name"><span class="store-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store">
+                                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                            <path d="M2 7h20" />
+                                            <path
+                                                d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                        </svg></span><span class="font-sl">Store Name</span></label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart-item-card flex">
+                            <div class="cart-item-box cart-box-left flex">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                                <div class="cart-item-img">
+                                    <img src="../assets/product-img1.jpg" alt="" width="90px">
+                                </div>
+                                <div class="cart-item-discription">
+                                    <div class="cart-item-name">NIKE Men's Shoes</div>
+                                    <div class="cart-item-about">Ethylene-vinyl acetate (EVA)</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-box cart-box-right flex">
+                                <div class="cart-box-price">
+                                    <div class="">$49.99</div>
+                                    <div class="text-line">$85.00</div>
+                                    <div class="price-box-icons flex">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash-2">
+                                                <path d="M3 6h18" />
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                                <line x1="10" x2="10" y1="11" y2="17" />
+                                                <line x1="14" x2="14" y1="11" y2="17" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-quantity-box">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                    <div class="counter font-md">1</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="list-head">
+                            <div class="store-list">
+                                <input type="checkbox">
+                                <label for="store-name" class="store-name">
+                                    <span class="store-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store">
+                                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                            <path d="M2 7h20" />
+                                            <path
+                                                d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                        </svg>
+                                    </span>
+                                    <span class="font-sl">Store Name</span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart-item-card flex">
+                            <div class="cart-item-box cart-box-left flex">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                                <div class="cart-item-img">
+                                    <img src="../assets/product-img1.jpg" alt="" width="90px">
+                                </div>
+                                <div class="cart-item-discription">
+                                    <div class="cart-item-name">NIKE Men's Shoes</div>
+                                    <div class="cart-item-about">Ethylene-vinyl acetate (EVA)</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-box cart-box-right flex">
+                                <div class="cart-box-price">
+                                    <div class="">$49.99</div>
+                                    <div class="text-line">$85.00</div>
+                                    <div class="price-box-icons flex">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash-2">
+                                                <path d="M3 6h18" />
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                                <line x1="10" x2="10" y1="11" y2="17" />
+                                                <line x1="14" x2="14" y1="11" y2="17" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-quantity-box">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                    <div class="counter font-md">1</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="list-head">
+                            <div class="store-list">
+                                <input type="checkbox">
+                                <label for="store-name" class="store-name"><span class="store-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store">
+                                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                            <path d="M2 7h20" />
+                                            <path
+                                                d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                        </svg></span><span class="font-sl">Store Name</span></label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart-item-card flex">
+                            <div class="cart-item-box cart-box-left flex">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                                <div class="cart-item-img">
+                                    <img src="../assets/product-img1.jpg" alt="" width="90px">
+                                </div>
+                                <div class="cart-item-discription">
+                                    <div class="cart-item-name">NIKE Men's Shoes</div>
+                                    <div class="cart-item-about">Ethylene-vinyl acetate (EVA)</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-box cart-box-right flex">
+                                <div class="cart-box-price">
+                                    <div class="">$49.99</div>
+                                    <div class="text-line">$85.00</div>
+                                    <div class="price-box-icons flex">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash-2">
+                                                <path d="M3 6h18" />
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                                <line x1="10" x2="10" y1="11" y2="17" />
+                                                <line x1="14" x2="14" y1="11" y2="17" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-quantity-box">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                    <div class="counter font-md">1</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="list-head">
+                            <div class="store-list">
+                                <input type="checkbox">
+                                <label for="store-name" class="store-name"><span class="store-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store">
+                                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                                            <path d="M2 7h20" />
+                                            <path
+                                                d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
+                                        </svg></span><span class="font-sl">Store Name</span></label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart-item-card flex">
+                            <div class="cart-item-box cart-box-left flex">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                                <div class="cart-item-img">
+                                    <img src="../assets/product-img1.jpg" alt="" width="90px">
+                                </div>
+                                <div class="cart-item-discription">
+                                    <div class="cart-item-name">NIKE Men's Shoes</div>
+                                    <div class="cart-item-about">Ethylene-vinyl acetate (EVA)</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-box cart-box-right flex">
+                                <div class="cart-box-price">
+                                    <div class="">$49.99</div>
+                                    <div class="text-line">$85.00</div>
+                                    <div class="price-box-icons flex">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash-2">
+                                                <path d="M3 6h18" />
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                                <line x1="10" x2="10" y1="11" y2="17" />
+                                                <line x1="14" x2="14" y1="11" y2="17" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-quantity-box">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                            <path d="M5 12h14" />
+                                            <path d="M12 5v14" />
+                                        </svg>
+                                    </div>
+                                    <div class="counter font-md">1</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                            <path d="M5 12h14" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-section cart-right">
+                <div class="cart-right-wrapper">
+                    <div class="cart-location-sec flex">
+                       <div class="cart-location-icon">
+                         <img src="../assets/location_icon_dark.png" alt="" width="15">
+                       </div>
+                       <div class="cart-location-detail">Anchorage , Alaska , United States</div>
+                    </div>
+                    <hr>
+                    <div class="cart-pricing-sec">
+                        <div class="cart-pricing-heading">Order Summary</div>
+                        <div class="cart-pricing-detail flex space-between">
+                            <div class="">Subtotal (0 items)</div>
+                            <div class="">$00.00</div>
+                        </div>
+                        <div class="cart-shipping-box flex space-between">
+                            <div class="">Shipping Fee</div>
+                            <div class="">$00.00</div>
+                        </div>
+                    </div>
+                    <div class="voucher-sec">
+                        <input class="voucher-holder" type="text" placeholder="Enter Coupon Code">
+                        <button class="voucher-btn">APPLY</button>
+                    </div>
+                    <div class="subtotal-amount flex space-between">
+                        <div class="subtotal-items">Total</div>
+                        <div class="subtotal-price">$00.00</div>
+                    </div>
+                    <div class="checkout-btn"><button>PROCEED TO CHECKOUT</button></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
 </body>
+
 </html>
