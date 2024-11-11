@@ -356,7 +356,8 @@ main {
     background-color: #0ea5e9;
     color: #FFF;
 }
-.btn a{
+.btn1{
+    background-color: #f57224;
     color: #FFF;
 }
 .btn:focus{
@@ -364,11 +365,12 @@ main {
     border: 1.1px solid #0ea5e9;
     color: #0ea5e9;
 }
-.btn a:focus{
+.btn1:focus{
     background-color: transparent;
-    border: 1.1px solid #0ea5e9;
-    color: #0ea5e9;
+    border: 1.1px solid #f57224;
+    color: #f57224;
 }
+
 .product-pg__info{
     margin-top: 50px;
     border: 1px solid rgba(162, 162, 162, 0.364);
@@ -402,5 +404,6 @@ font-weight: 500;
     font-size: .8rem;
     color: rgb(72, 72, 72);
     cursor: pointer;
-
 }
+/* Cart Style */
+
